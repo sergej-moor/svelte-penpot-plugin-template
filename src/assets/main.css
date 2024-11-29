@@ -1,6 +1,6 @@
 @import "./penpot.css";
 @import "./range-input.css";
-//@tailwind base;
+
 @tailwind components;
 @tailwind utilities;
 :root {
