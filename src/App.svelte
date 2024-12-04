@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Controls from './components/Controls.svelte';
+  import Preview from './components/Preview.svelte';
   import { theme, updateTheme } from './stores/theme';
   
   const handleMessage = (event: MessageEvent) => {
@@ -11,8 +13,14 @@
 <svelte:window onmessage={handleMessage} />
 
 <main data-theme={$theme}>
-  <h1>Plugin Template</h1>
-  <!-- Add your plugin UI components here -->
+  
+  
+  <div class="flex flex-col gap-2">
+   
+  <Preview></Preview>
+  <Controls></Controls>
+  </div>
+  
 </main>
 
 <style>

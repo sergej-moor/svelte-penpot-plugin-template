@@ -1,8 +1,8 @@
 import type { PluginMessageEvent } from "./types";
 
 penpot.ui.open("Plugin Template", `?theme=${penpot.theme}`, {
-  width: 264,
-  height: 400,
+  width: 308,
+  height: 512,
 });
 
 // Handle messages from UI
